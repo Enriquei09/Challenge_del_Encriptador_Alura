@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge del Encriptador</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/logo-alura.png" alt="Logo de Alura">
+        </nav>
+    </header>
+    <main>
+        <section class="primer_contenido">
+            <textarea class="cajaDeTexto" id="cajaDeTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="instrucciones">
+                <img src="assets/exclamation_icon.png" alt="Icono de exclamación">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="BotonesArea">
+                <button onclick="procesarTexto(true)" class="BtnEncriptar">Encriptar</button>
+                <button onclick="procesarTexto(false)" class="BtnDesencriptar" >Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="segundo_contenido">
+            <div class="segundo_contenido_nino">
+                <img class="imgnino" src="assets/ninoAlura.png" alt="Niño con una lupa">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p class="mensajeIndicacion">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            
+            <div class="contenido_oculto" >
+                <textarea class="Caja_txt_dos" id="CajaTxtDos" placeholder=""></textarea>
+                <button  onclick="copiarTexto()" class="Btn_copiar">Copiar</button>
+
+            </div>
+
+        </section>  
+        
+        <script src="EncriptadorFuncionamiento.js"></script>
+        
+    </main>
+    <footer>
+        <p>Desarollado por: Carlos Enrique Rubio Gutierrez, Challenge del encriptador 2024</p>
+    </footer>
+</body>
+</html>
