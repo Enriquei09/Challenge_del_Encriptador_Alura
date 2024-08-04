@@ -1,0 +1,352 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f3f5fc;
+    font-family: Arial, sans-serif;
+}
+
+nav img {
+    position: absolute;
+    margin-left: 6%;
+}
+
+main {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%; 
+}
+
+.primer_contenido {
+    width: 46%;
+    padding: 10%;
+    flex: 1em;
+}
+
+.cajaDeTexto {
+    width:  637px;
+    height: 300px;
+    resize: none;
+    font-size: 32px;
+    color: #0a3871;
+    border: 2px solid transparent; 
+    background: transparent;
+    line-height: 1.5;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.cajaDeTexto::placeholder {
+    color: #0a3871;
+    font-size: 32px;
+}
+
+.instrucciones {
+    margin: 3% 0;
+    font-size: 0.75em;
+    line-height: 1.5;
+}
+
+.instrucciones img,
+.instrucciones p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.BotonesArea {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+button {
+    width: 100%; 
+    height: 4.19em;
+    font-size: 1em;
+    border: 1px solid #0a3871;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.BtnEncriptar {
+    background: #0a3871;
+    color: white;
+}
+
+.BtnDesencriptar{
+    background: #d8dfe8;
+    color: #0a3871;
+}
+
+
+
+.segundo_contenido {
+    width: 27%;
+    height: 570px;
+    margin: 5%;
+    padding: 2em;
+    background: white;
+    border-radius: 2em;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    flex-direction: row;
+    justify-content:center ;
+}
+
+.segundo_contenido_nino{
+    padding: 10%;
+    flex-direction: column;
+    justify-content:center ;
+}
+.imgnino {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 2em;
+    font-weight: 700;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1.2;
+    color: #343a40;
+}
+
+.mensajeIndicacion {
+    margin-top: 1em;
+    line-height: 1.5;
+    font-size: 0.75em;
+    text-align: center;
+    color: #495057;
+}
+
+.contenido_oculto{
+    display: none;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 1em;
+    
+}
+
+.Caja_txt_dos{
+    margin: 1em;
+    height: 406px; 
+    width: 259px;
+    resize: none;
+    font-size: 24px;
+    color: black;
+    border: 2px solid transparent;    
+    background: transparent;
+    line-height: 1;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.Btn_copiar{
+    background: white;
+    color: #0a3871;
+
+} 
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f5fc;
+    color: #343a40;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 401px) and (max-width:800px){
+   
+        *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }    
+   
+    main{
+        flex-direction: column;
+        
+    }
+
+    nav{
+        height: 6em;
+    }
+
+    nav img {
+        position: relative;
+        margin-left: 6%;
+        top: 50%;
+    }
+
+    .primer_contenido{
+        width: auto;
+        margin: 5% auto;
+        padding: 0;
+    }
+
+    .cajaDeTexto {
+        width:  637px;
+        height: 400px;
+        
+    }
+
+    .segundo_contenido{
+        width: 637px;
+        height: 200px;
+        margin:  auto;
+    }
+    h1{
+        margin-top: 0;
+    }
+    .mensajeIndicacion{
+        margin-top: 1em;
+    }
+
+    .segundo_contenido_nino{
+        transform: none;       
+    }
+    
+    .imgnino{
+        display: none;
+    }
+
+    .contenido_oculto{
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        width: 620px;
+        height: 300px;
+        
+    }
+
+    .Caja_txt_dos{
+        padding: 0;
+        margin: 0;
+        width: 610px;
+        height: 130px;
+        resize: vertical;
+    }
+
+    .Btn_copiar{
+        
+        padding: 0;
+        margin: 0;
+        width: 610px;
+        height:57px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+        
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+        
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    nav {
+        height: 6em;
+        display: flex;
+        align-items: center;
+    }
+
+    nav img {
+        position: relative;
+        margin-left: 1%;
+        top: 0;
+        transform: translateY(50%);
+    }
+
+    .primer_contenido {
+        flex-direction: column;
+        width: auto;
+        max-width: 380px;
+        margin: 1% auto;
+        padding: 1em;
+    }
+
+    .cajaDeTexto {
+        padding: 5px;
+        margin: 5px 0;
+        width: auto;
+        max-width: 380px;
+        height: 400px;
+    }
+
+    .BotonesArea{
+        flex-direction: column;
+    }
+
+    button{
+        width: 80%;
+        height: 80px;
+    }
+
+    .segundo_contenido {
+        margin: 0.5em;
+        width: 380px;
+        height: auto;        
+        padding: 10%;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+    .mensajeIndicacion {
+        margin-top: 1em;
+        font-size: 0.9em;
+    }
+
+    .segundo_contenido_nino {
+        transform: none;
+    }
+
+    .imgnino {
+        display: none;
+    }
+
+    .contenido_oculto {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        max-width: 380px;
+        height: auto;
+    }
+
+    .Caja_txt_dos {
+        padding: 0;
+        margin: 0;
+        max-width: 390px;
+        height: 130px;
+        
+    }
+
+    .Btn_copiar {
+        padding: 10px;
+        margin: 10px 0;
+        
+        height: 57px;
+    }
+}
